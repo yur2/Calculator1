@@ -1,5 +1,6 @@
 package com.example.yurina.calculator_yur2;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
