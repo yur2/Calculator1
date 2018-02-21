@@ -129,8 +129,6 @@ public class SubActivityCalcul extends AppCompatActivity {
                 text.setText(text.getText().toString() + "");
                 operate = 6;
                 break;
-
-
         }
         switch (v.getId()) {
 
