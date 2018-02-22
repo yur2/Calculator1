@@ -39,7 +39,7 @@ public class SubActivityCalcul extends AppCompatActivity {
     }
 
 
-    public void onClick(View v) {
+    public void onClick(View btn) {
 
         //TextView text = new TextView(R.id.text);
         int operate = 0;
@@ -51,7 +51,7 @@ public class SubActivityCalcul extends AppCompatActivity {
         TextView text2 = (TextView) findViewById(R.id.text2);
 
 
-        switch (v.getId()) {
+        switch (btn.getId()) {
 
 //            if(text.getText().toString() != ""){
 //                text.setText("");
@@ -98,7 +98,7 @@ public class SubActivityCalcul extends AppCompatActivity {
 
         String num1 = text.getText().toString();
 
-        switch (v.getId()) {
+        switch (btn.getId()) {
 
             case R.id.plusbtn:
                 text.setText(text.getText().toString() + "+");
@@ -130,7 +130,8 @@ public class SubActivityCalcul extends AppCompatActivity {
                 operate = 6;
                 break;
         }
-        switch (v.getId()) {
+
+        switch (btn.getId()) {
 
 
             case R.id.onebtn:
@@ -192,6 +193,7 @@ public class SubActivityCalcul extends AppCompatActivity {
                     break;
                 } else
                     sum = sum - Integer.parseInt(num2);
+                break;
 
             case 3:
                 if (sum == 0) {
@@ -199,6 +201,7 @@ public class SubActivityCalcul extends AppCompatActivity {
                     break;
                 } else
                     sum = sum * Integer.parseInt(num2);
+                break;
 
             case 4:
                 if (sum == 0) {
@@ -206,6 +209,7 @@ public class SubActivityCalcul extends AppCompatActivity {
                     break;
                 } else
                     sum = sum / Integer.parseInt(num2);
+                break;
 
             case 5:
 
